@@ -1,4 +1,4 @@
-# EMOJI INTERPRETER
+# EMOJI IDENTIFIER
 
 this apps interprets emoji entered by you if its in our datbase or intreprets emoji clicked by you
 ---
