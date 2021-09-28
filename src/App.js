@@ -13,6 +13,10 @@ function App() {
     });
     setMessage(emojiName);
   };
+
+  const displayEmojiName = (e,name) => {
+    setMessage(name);
+  };
   return (
     <div className="container text-center">
       <h1 className="text-center mt-5 mb-3">Emoji Identifier</h1>
@@ -26,7 +30,7 @@ function App() {
       <div>
         {EmojiDictionary.map((emoji, index) => {
           return (
-            <span key={index} className="fs-3 fw-bold p-2">
+            <span key={index} className="fs-3 fw-bold p-2 emoji" onClick={(e)=>displayEmojiName(e,emoji.description)}>
               {emoji.emoji}
             </span>
           );
